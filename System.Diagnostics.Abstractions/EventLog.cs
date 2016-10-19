@@ -16,7 +16,11 @@ namespace System.Diagnostics.Abstractions
         public bool EnableRaisingEvents { get { return _inner.EnableRaisingEvents; } set { _inner.EnableRaisingEvents = value; } }
         public ISynchronizeInvoke SynchronizingObject { get { return _inner.SynchronizingObject; } set { _inner.SynchronizingObject = value; } }
         public string Source { get; set; }
-        public event EntryWrittenEventHandler EntryWritten;
+        public event EntryWrittenEventHandler EntryWritten
+        {
+            add { _inner.EntryWritten += value; }
+            remove { _inner.EntryWritten -= value; }
+        }
 
         public EventLog() : this(new Diagnostics.EventLog()) { }
         public EventLog(Diagnostics.EventLog inner) { _inner = inner; }
