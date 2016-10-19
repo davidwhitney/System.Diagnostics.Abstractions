@@ -41,5 +41,15 @@ namespace System.Diagnostics.Abstractions
         public void WriteEntry(string message, EventLogEntryType type, int eventID, short category, byte[] rawData) => _inner.WriteEntry(message, type, eventID, category, rawData);
         public void WriteEvent(EventInstance instance, params object[] values) => _inner.WriteEvent(instance, values);
         public void WriteEvent(EventInstance instance, byte[] data, params object[] values) => _inner.WriteEvent(instance, data, values);
+
+        public static implicit operator EventLog(Diagnostics.EventLog log)
+        {
+            return new EventLog(log);
+        }
+
+        public static implicit operator Diagnostics.EventLog(EventLog log)
+        {
+            return log._inner;
+        }
     }
 }
