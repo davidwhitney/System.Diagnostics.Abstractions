@@ -2,13 +2,6 @@
 {
     public interface IStopwatch
     {
-        //public static readonly long Frequency;
-        ////
-        //// Summary:
-        ////     Indicates whether the timer is based on a high-resolution performance counter.
-        ////     This field is read-only.
-        //public static readonly bool IsHighResolution;
-
         /// <devdoc>
         ///    <para>
         ///          Gets the total elapsed time measured by the current instance.
@@ -36,21 +29,6 @@
         ///    </para>
         /// </devdoc> 
         bool IsRunning { get; }
-
-        ///// <devdoc>
-        /////    <para>
-        /////         Gets the current number of ticks in the timer mechanism.
-        /////    </para>
-        ///// </devdoc> 
-        //public static long GetTimestamp();
-
-        ///// <devdoc>
-        /////    <para>
-        /////         Initializes a new System.Diagnostics.Stopwatch instance, sets the elapsed time
-        /////         property to zero, and starts measuring elapsed time.
-        /////    </para>
-        ///// </devdoc> 
-        //public static Stopwatch StartNew();
 
         /// <devdoc>
         ///    <para>
