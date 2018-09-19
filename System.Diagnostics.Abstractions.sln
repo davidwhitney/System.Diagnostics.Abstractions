@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Diagnostics.Abstractions", "System.Diagnostics.Abstractions\System.Diagnostics.Abstractions.csproj", "{356E1E77-5FC5-4D24-A211-C40CCA2813A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "System.Diagnostics.Abstractions", "System.Diagnostics.Abstractions\System.Diagnostics.Abstractions.csproj", "{356E1E77-5FC5-4D24-A211-C40CCA2813A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {522B8EEB-B066-466C-93F0-5447B3A890ED}
 	EndGlobalSection
 EndGlobal
