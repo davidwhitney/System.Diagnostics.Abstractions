@@ -50,7 +50,7 @@ namespace System.Diagnostics.Abstractions
         public bool HasExited => _inner.HasExited;
 
         /// <inheritdoc />
-        public int Id => _inner.BasePriority;
+        public int Id => _inner.Id;
 
         /// <inheritdoc />
         public string MachineName => _inner.MachineName;
