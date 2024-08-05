@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFrameworks>net40;netstandard2.0;</TargetFrameworks>
-        <Version>1.0.9</Version>
+        <Version>1.1.0</Version>
         <Authors>David Whitney, Marcel Roozekrans</Authors>
         <Company>ElectricHeadSoftware</Company>
         <Description>Interfaced wrappers around System Diagnostics.</Description>
@@ -12,8 +12,8 @@
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <AssemblyVersion>1.0.9.0</AssemblyVersion>
-        <FileVersion>1.0.9.0</FileVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <FileVersion>1.1.0.0</FileVersion>
     </PropertyGroup>
     <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0'">
     </ItemGroup>  
